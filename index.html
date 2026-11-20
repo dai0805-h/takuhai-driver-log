@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>宅配ドライバーログ サポート</title>
+<style>
+  :root { --accent:#1565e0; --ink:#1f2933; --sub:#5f6b7a; --bg:#eef4fc; --card:#fff; }
+  @media (prefers-color-scheme: dark) { :root { --accent:#6aa8ff; --ink:#e8edf3; --sub:#a3adba; --bg:#121a24; --card:#1c2733; } }
+  body { margin:0; font-family:-apple-system,"Hiragino Sans",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; }
+  main { max-width:680px; margin:0 auto; padding:32px 16px 64px; }
+  header { display:flex; align-items:center; gap:16px; }
+  header img { width:72px; height:72px; border-radius:16px; }
+  h1 { font-size:1.6rem; margin:0; }
+  h2 { font-size:1.15rem; margin-top:2em; border-left:4px solid var(--accent); padding-left:10px; }
+  .card { background:var(--card); border-radius:14px; padding:16px 20px; margin:16px 0; }
+  a { color:var(--accent); }
+  .sub { color:var(--sub); font-size:.9rem; }
+  dt { font-weight:bold; margin-top:1em; }
+  dd { margin:0 0 0 1em; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="宅配ドライバーログのアイコン">
+    <div>
+      <h1>宅配ドライバーログ</h1>
+      <div class="sub">宅配・軽貨物ドライバー向けの日報・売上記録アプリ</div>
+    </div>
+  </header>
+
+  <h2>お問い合わせ</h2>
+  <div class="card">
+    <p>アプリの使い方や不具合、ご要望は、こちらまでメールでお送りください。</p>
+    <p><a href="mailto:melonk.1ai@gmail.com?subject=%E5%AE%85%E9%85%8D%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90%E3%83%BC%E3%83%AD%E3%82%B0%20%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">melonk.1ai@gmail.com</a></p>
+    <p class="sub">件名は「宅配ドライバーログ お問い合わせ」としてください。アプリの「設定」→「お問い合わせ・サポート」→「メールを作成」からも送れます。その場合、アプリのバージョンが自動で記入されます。日報・売上・メモなどの記録は、自動で添付・送信されません。</p>
+  </div>
+
+  <h2>使い方</h2>
+  <div class="card">
+    <p>「記録」で件数・走行距離・給油などを入力すると、日報と売上を端末に保存します。</p>
+    <p>「カレンダー」で記録や祝日を確認し、1か月のカレンダーPDFを出力できます。</p>
+    <p>「設定」で売上項目・単価やカレンダーの表示項目を選び、業務レポートPDFやバックアップJSONを共有できます。楽天のセール情報は、表示をONにするとカレンダーに表示されます。</p>
+  </div>
+
+  <h2>よくある質問</h2>
+  <dl class="card">
+    <dt>単価を変えたら、過去の売上も変わりますか？</dt>
+    <dd>変わりません。売上は保存したときの項目名・単価で記録されるため、設定を変えても過去の売上はそのままです。</dd>
+    <dt>カレンダーPDFを印刷すると端が切れます</dt>
+    <dd>印刷時の倍率を「100%（実際のサイズ）」にしてください。カレンダーPDFはA4横・1か月1枚で、四辺に余白をとっています。</dd>
+    <dt>楽天のセールがカレンダーに出ません</dt>
+    <dd>「設定」の楽天セール表示がONになっているか確認し、「イベント情報を今すぐ更新」を押してください。通信できないときは、前回取得した情報を表示します。</dd>
+    <dt>データはどこに保存されますか？</dt>
+    <dd>すべてお使いのiPhoneの中です。ログインはなく、開発者のサーバーに記録が送られることもありません。アプリを削除すると記録も消えるため、「設定」のバックアップJSONで保管しておくことをおすすめします。</dd>
+  </dl>
+
+  <h2>データと通信</h2>
+  <div class="card">
+    <p>日報や設定は端末内に保存されます。PDFやバックアップは、ご自身で共有操作をしたときに、選んだ共有先へ渡されます。</p>
+    <p>楽天セール情報の更新時、外部ページの閲覧時、問い合わせメールの送信時には、それぞれのサービスと通信します。</p>
+  </div>
+
+  <h2>プライバシー</h2>
+  <p><a href="privacy.html">プライバシーポリシー</a></p>
+</main>
+</body>
+</html>
